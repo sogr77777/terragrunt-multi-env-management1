@@ -1,5 +1,5 @@
 # terraform {
-#   source = "git::git@github.com:sudheerduba/aws-vpc-network-terraform.git//modules/vpc?ref=v1.1.0"
+#   source = "git::git@github.com:sogr77777/aws-vpc-network-terraform-1.git//modules/vpc?ref=v1.1.0"
 # }
 # include "root"{
 #   path = find_in_parent_folders()
@@ -12,7 +12,7 @@
 # }
 
 terraform {
-  source = "git::git@github.com:sudheerduba/aws-vpc-network-terraform.git//modules?ref=v1.3.0"
+  source = "git::git@github.com:sogr77777/aws-vpc-network-terraform-1.git//modules?ref=v1.3.0"
 }
 include "root" {
   path = find_in_parent_folders()
