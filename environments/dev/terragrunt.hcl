@@ -1,14 +1,3 @@
-# terraform {
-#   source = "git::git@github.com:sogr77777/aws-vpc-network-terraform-1.git//modules/vpc?ref=v1.1.0"
-# }
-# include "root"{
-#   path = find_in_parent_folders()
-# }
-# inputs ={
-#   region_name = "us-west-1"
-#   public_az = ["us-west-1a", "us-west-1b"]
-#   private_az = ["us-west-1a", "us-west-1b"]
-# }
 terraform {
   source = "git::git@github.com:sogr77777/aws-vpc-network-terraform-1.git//modules?ref=v1.3.0"
 }
@@ -30,18 +19,6 @@ inputs = {
   region_name       = local.region
   vpc_cidr_block    = "10.10.0.0/24"
 
-
-  # cluster_enabled_log_types       = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
-  # public_subnets  = ["10.10.0.0/24", "10.10.2.0/24"]
-  # private_subnets = ["10.10.1.0/24", "10.10.3.0/24"]
-  # public_subnets = [
-  #   "10.10.0.0/24",
-  #   "10.10.2.0/24"
-  # ]
-  # private_subnets = [
-  #   "10.10.1.0/24",
-  #   "10.10.3.0/24"
-  # ]
   public_subnets = {
     "${local.region}a" = "10.10.0.0/24"
     "${local.region}b" = "10.10.2.0/24"

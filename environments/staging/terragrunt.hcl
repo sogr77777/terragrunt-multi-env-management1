@@ -1,18 +1,3 @@
-# terraform {
-#   source = "git::git@github.com:sogr77777/aws-vpc-network-terraform-1.git//modules/vpc?ref=v1.1.0"
-# }
-
-# include "root"{
-#   path = find_in_parent_folders()
-# }
-# inputs ={
-#   region_name = "us-east-2"
-#   public_az = ["us-east-2a", "us-east-2b"]
-#   private_az = ["us-east-2a", "us-east-2b"]
-#   environment = "Staging"
-# }
-
-
 terraform {
   source = "git::git@github.com:sogr77777/aws-vpc-network-terraform-1.git//modules?ref=v1.3.0"
 }
